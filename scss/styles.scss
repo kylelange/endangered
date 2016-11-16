@@ -1,6 +1,135 @@
-$color: 	#d36154;
+$color: #a7b490;
 
-h1 {
-  color: $color;
-  background-color: orange;
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('/../fonts/CaviarDreams.ttf');
+}
+
+body {
+  background-color: #2B2720;
+  font-family: 'CaviarDreams', sans-serif;
+}
+
+header {
+  color: white;
+  text-align: center;
+  // background-color: #73A1c5;
+}
+
+p {
+  width: 200px;
+  position: absolute;
+  display: none;
+  background-color: blanchedalmond;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: -65px;
+  z-index: 1;
+}
+
+.globe {
+  position: relative;
+}
+
+.globe img {
+  width: 100%;
+  height: auto;
+}
+
+// cheetah's div area
+.cheetah {
+  position: absolute;
+  top: 44%;
+  left: 52%;
+}
+
+.cheetah img {
+  width: 15%;
+  height: auto;
+  // position: absolute;
+  border: 1px solid $color;
+  box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.75);
+}
+
+//this hover works for all animals b/c the a is a universal selector
+a:hover + p {
+  display: block;
+}
+
+// River Dolphin Div Area
+.dolphin {
+  position: absolute;
+  top: 32%;
+  left: 76%;
+  z-index: 2;
+}
+
+.dolphin img {
+  width: 23%;
+  height: auto;
+  border: 1px solid $color;
+  box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.75);
+}
+
+// Numbat Div Area
+.numbat {
+  position: absolute;
+  top: 59%;
+  left: 82%;
+  z-index: 1;
+}
+
+.numbat img {
+  width: 37%;
+  height: auto;
+  border: 1px solid $color;
+  box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.75);
+}
+
+// Blue Whale Div Area
+.whale {
+  position: absolute;
+  top: 85%;
+  left: 34%;
+}
+
+.whale img {
+  width: 16%;
+  height: auto;
+  border: 1px solid $color;
+  box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.75);
+}
+
+.whale p {
+  margin-left: -58px;
+  margin-top: -528px;
+}
+
+// Gray Wolf Div Area
+.gray-wolf {
+  position: absolute;
+  top: 34%;
+  left: 18%;
+}
+
+.gray-wolf img {
+  width: 8%;
+  height: auto;
+  border: 1px solid $color;
+  box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.75);
+}
+
+// Chinchilla Div Area
+.chinchilla {
+  position: absolute;
+  top: 54%;
+  left: 30%;
+}
+
+.chinchilla img {
+  width: 16%;
+  height: auto;
+  border: 1px solid $color;
+  box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.75);
 }
